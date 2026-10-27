@@ -66,6 +66,7 @@ Omit `AKARI_PRIVATE_KEY` to explore the tools without spending anything — each
    `GET https://akari-x402.puzzling-marten.workers.dev/x402/affiliate?address=0xYourPayoutWallet`
    Public board (unseeded, honest): `/x402/affiliate/leaderboard`.
 4. Payouts: 40 % of referred gross, USDC on Base, monthly once accrued ≥ $1.00.
+   Full terms, live prices and the exclusion rules: https://edvyno.github.io/akari-proof/builder.html
 
 ## Notes
 
