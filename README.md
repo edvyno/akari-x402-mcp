@@ -7,6 +7,16 @@ metered in USDC on Base — no API keys, no subscriptions, no signup.
 **Earn from it:** this repo is also the starter kit for the **Akari Builder Program** — 40 % of
 every sale your copy refers goes back to your wallet, read straight off the paid resource URL.
 
+**No install at all:** the same catalogue is served as a **remote MCP endpoint** —
+`POST https://akari-x402.puzzling-marten.workers.dev/mcp` (JSON-RPC 2.0). `tools/list` returns every
+paid route with its price in `_meta.x402`; `akari_board` is free. Point any MCP client at that URL.
+
+**The flagship tool is the decision, not the data:** `akari_alpha_brief` ($1.00) returns the market
+regime, the ranked LONG/SHORT edges that cleared the full gate set (funding-carry × momentum
+confluence, $5M/$2M liquidity floors, TA + sentiment vetoes) with size/stop/target hints and
+invalidations, the avoid list, stand-down reasons and provenance. Free redacted preview:
+<https://akari-x402.puzzling-marten.workers.dev/board>.
+
 ```bash
 # 1. install
 python3 -m venv .venv && . .venv/bin/activate
