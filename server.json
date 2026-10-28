@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.edvyno/akari-crypto-intel",
+  "title": "Akari Crypto Intel",
+  "description": "Crypto intel per call in USDC: HL funding, TV technicals, wallet vetting, PM edges.",
+  "repository": {
+    "url": "https://github.com/edvyno/akari-x402-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://akari-x402.puzzling-marten.workers.dev/mcp"
+    }
+  ]
+}
