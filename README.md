@@ -1,5 +1,7 @@
 # akari-x402-mcp
 
+[![Akari Crypto Intel MCP connector – tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/io.github.edvyno/akari-crypto-intel/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.edvyno/akari-crypto-intel)
+
 An [MCP](https://modelcontextprotocol.io) server that exposes a live **x402-paid crypto-intel API**
 as tools any MCP host (Claude Desktop, Cursor, Cline, custom agents) can call. Every tool is
 metered in USDC on Base — no API keys, no subscriptions, no signup.
