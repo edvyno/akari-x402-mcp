@@ -68,6 +68,22 @@ Omit `AKARI_PRIVATE_KEY` to explore the tools without spending anything — each
 3. The facilitator (Coinbase CDP) verifies and broadcasts, then the tool's request is retried with
    `X-PAYMENT` and the JSON comes back. Settlement is on-chain and auditable by anyone.
 
+### If you poll on a schedule, buy the pass instead
+
+`GET /x402/pass` — **$5.00 buys 30 days of every paid route**, up to 5,000 calls (fair use). You get a
+bearer token back; send it as `Authorization: Bearer akari_pass_…` on the same URLs and the payment
+step disappears:
+
+```bash
+# buy once with any x402 client (pays $5 USDC on Base, returns the token in the JSON body)
+tok=$(x402-pay https://akari-x402.puzzling-marten.workers.dev/x402/pass | jq -r .pass_token)
+curl -H "Authorization: Bearer $tok" https://akari-x402.puzzling-marten.workers.dev/x402/feed
+curl -H "Authorization: Bearer $tok" https://akari-x402.puzzling-marten.workers.dev/x402/pass/status
+```
+
+At $0.02 per call, polling one route hourly costs $14.40/month — the pass covers all of them for $5.
+`GET /x402/pass/status` is free and tells you calls used and the expiry without spending a call.
+
 ## Builder Program (how to actually earn)
 
 1. Copy this server (or any client) into your product.
