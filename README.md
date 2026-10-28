@@ -84,3 +84,7 @@ Omit `AKARI_PRIVATE_KEY` to explore the tools without spending anything — each
   `/.well-known/x402`, `/openapi.json`.
 - The desk publishes its real numbers, including losses — the data is live, not backfilled.
 - This server is a thin client: it holds no keys beyond the payer wallet you choose to give it.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Fork it, keep the builder ref, keep the 40 %.
