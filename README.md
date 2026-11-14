@@ -10,14 +10,14 @@ metered in USDC on Base — no API keys, no subscriptions, no signup.
 every sale your copy refers goes back to your wallet, read straight off the paid resource URL.
 
 **No install at all:** the same catalogue is served as a **remote MCP endpoint** —
-`POST https://akari-x402.puzzling-marten.workers.dev/mcp` (JSON-RPC 2.0). `tools/list` returns every
+`POST https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/mcp` (JSON-RPC 2.0). `tools/list` returns every
 paid route with its price in `_meta.x402`; `akari_board` is free. Point any MCP client at that URL.
 
 **The flagship tool is the decision, not the data:** `akari_alpha_brief` ($1.00) returns the market
 regime, the ranked LONG/SHORT edges that cleared the full gate set (funding-carry × momentum
 confluence, $5M/$2M liquidity floors, TA + sentiment vetoes) with size/stop/target hints and
 invalidations, the avoid list, stand-down reasons and provenance. Free redacted preview:
-<https://akari-x402.puzzling-marten.workers.dev/board>.
+<https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/board>.
 
 ```bash
 # 1. install
@@ -78,9 +78,9 @@ step disappears:
 
 ```bash
 # buy once with any x402 client (pays $5 USDC on Base, returns the token in the JSON body)
-tok=$(x402-pay https://akari-x402.puzzling-marten.workers.dev/x402/pass | jq -r .pass_token)
-curl -H "Authorization: Bearer $tok" https://akari-x402.puzzling-marten.workers.dev/x402/feed
-curl -H "Authorization: Bearer $tok" https://akari-x402.puzzling-marten.workers.dev/x402/pass/status
+tok=$(x402-pay https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/x402/pass | jq -r .pass_token)
+curl -H "Authorization: Bearer $tok" https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/x402/feed
+curl -H "Authorization: Bearer $tok" https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/x402/pass/status
 ```
 
 At $0.02 per call, polling one route hourly costs $14.40/month — the pass covers all of them for $5.
@@ -91,7 +91,7 @@ At $0.02 per call, polling one route hourly costs $14.40/month — the pass cove
 1. Copy this server (or any client) into your product.
 2. Set `AKARI_REF=0xYourPayoutWallet` — every paid call you serve carries `?ref=` on the resource URL.
 3. Check earnings any time, no account needed:
-   `GET https://akari-x402.puzzling-marten.workers.dev/x402/affiliate?address=0xYourPayoutWallet`
+   `GET https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/x402/affiliate?address=0xYourPayoutWallet`
    Public board (unseeded, honest): `/x402/affiliate/leaderboard`.
 4. Payouts: 40 % of referred gross, USDC on Base, monthly once accrued ≥ $1.00.
    Full terms, live prices and the exclusion rules: https://edvyno.github.io/akari-proof/builder.html
