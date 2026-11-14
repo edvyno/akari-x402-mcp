@@ -9,6 +9,11 @@ metered in USDC on Base — no API keys, no subscriptions, no signup.
 **Earn from it:** this repo is also the starter kit for the **Akari Builder Program** — 40 % of
 every sale your copy refers goes back to your wallet, read straight off the paid resource URL.
 
+**One-command install (stdio, no Python):** `npx -y github:edvyno/akari-x402` — four native tools
+(`list_services`, `funding_edge_preview`, `token_safety_preview`, `paid_call`), free tiers included.
+The npm name `akari-x402` is reserved for that package and not published yet, so the `github:` spec is
+the line that actually resolves today.
+
 **No install at all:** the same catalogue is served as a **remote MCP endpoint** —
 `POST https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/mcp` (JSON-RPC 2.0). `tools/list` returns every
 paid route with its price in `_meta.x402`; `akari_board` is free. Point any MCP client at that URL.

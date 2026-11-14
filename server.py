@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Akari x402 MCP server — paid crypto-intel tools any MCP host can call.
 
-Wraps the Akari x402 catalog (https://akari-x402.puzzling-marten.workers.dev) as MCP tools.
+Wraps the Akari x402 catalog (https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org) as MCP tools.
 Every tool costs $0.02–$0.50 per call and is paid in USDC on Base through the x402 protocol.
 
 Two modes:
@@ -25,7 +25,7 @@ import os
 import sys
 import traceback
 
-BASE = os.environ.get("AKARI_BASE", "https://akari-x402.puzzling-marten.workers.dev").rstrip("/")
+BASE = os.environ.get("AKARI_BASE", "https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org").rstrip("/")
 REF = os.environ.get("AKARI_REF", "").strip()
 PAID = bool(os.environ.get("AKARI_PRIVATE_KEY"))
 
