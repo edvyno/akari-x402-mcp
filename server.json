@@ -2,17 +2,17 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.edvyno/akari-crypto-intel",
   "title": "Akari Crypto Intel",
-  "description": "x402-paid crypto intel: HL funding, TradingView TA, wallet vetting, Polymarket edges. 19 tools.",
+  "description": "x402-paid crypto intel: HL funding, TradingView TA, wallet verdicts, x402 audits. 34 tools.",
   "repository": {
     "url": "https://github.com/edvyno/akari-x402-mcp",
     "source": "github"
   },
-  "websiteUrl": "https://akari-x402.puzzling-marten.workers.dev/market",
-  "version": "1.0.1",
+  "websiteUrl": "https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/market",
+  "version": "1.3.0",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://akari-x402.puzzling-marten.workers.dev/mcp"
+      "url": "https://03s9tr085tfe5agke0tpqng34o.ingress.quanglong.org/mcp"
     }
   ]
 }
